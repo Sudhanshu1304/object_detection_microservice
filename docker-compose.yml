@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  ui-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - app-network
+    environment:
+      - AI_BACKEND_URL=http://ai-backend:8001/detect_objects/
+
+  ai-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.ai
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/app
+    command: uvicorn ai_service:app --host 0.0.0.0 --port 8001 --reload
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

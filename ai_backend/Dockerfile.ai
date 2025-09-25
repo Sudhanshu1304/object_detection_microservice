@@ -1,0 +1,10 @@
+FROM python:3.13.3-slim-buster
+WORKDIR /app
+COPY requirements_ai.txt .
+
+RUN pip install --no-cache-dir -r requirements_ai.txt \
+    && pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+COPY ai_service.py .
+
+CMD ["uvicorn", "ai_service:app", "--host", "0.0.0.0", "--port", "8000"]
