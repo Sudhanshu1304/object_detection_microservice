@@ -5,7 +5,7 @@
 <tr>
 <td>
 
-### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host 
+#### Image showing the `ui-backend server`, `ai-backend server` and the streamlit app running in local host 
 
 ![image](static/output_images/screen1.png)
 
@@ -17,7 +17,7 @@
 <tr>
 <td>
 
-### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host with the uploaded image and the detected objects 
+#### Image showing the `ui-backend server`, `ai-backend server` and the streamlit app running in local host with the uploaded image and the detected objects 
 
 ![image](static/output_images/screen2.png)
 
