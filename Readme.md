@@ -1,5 +1,29 @@
 # Object Detection Microservice Assessment
 
+# Demo Images
+<table>
+<tr>
+<td>
+
+### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host 
+
+![image](static/output_images/screen1.png)
+
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+
+### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host with the uploaded image and the detected objects 
+
+![image](static/output_images/screen2.png)
+
+</td>
+</tr>
+</table>
 
 ## Description
 
@@ -141,27 +165,3 @@ Example response:
 
 
 
-# Demo Images
-<table>
-<tr>
-<td>
-
-### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host 
-
-![image](static/output_images/screen1.png)
-
-</td>
-
-</tr>
-
-
-<tr>
-<td>
-
-### Image showing the UI-BACKED SERVER, AI-BACKED SERVER and the streamlit app running in local host with the uploaded image and the detected objects 
-
-![image](static/output_images/screen2.png)
-
-</td>
-</tr>
-</table>
