@@ -1,4 +1,4 @@
-# Object Detection Microservice Assessment
+# Object Detection Microservice Demo
 
 # Demo Images
 <table>
